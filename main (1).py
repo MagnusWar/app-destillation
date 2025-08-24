@@ -6,7 +6,7 @@ import pandas as pd
 # --- Configuración de la Página ---
 # Esto debe ser lo primero que se ejecute en el script.
 st.set_page_config(
-    page_title="Predictor de Rendimiento de Destilación",
+    page_title="Predictor de Rendimiento del Proceso de Flotación",
     page_icon="🧪",
     layout="wide"
 )
@@ -56,7 +56,7 @@ with st.sidebar:
 
     # Slider para la diferencia de presión
     pressure = st.slider(
-        label='Diferencia de Presión (psi)',
+        label='Turbiedad',
         min_value=-50,
         max_value=50,
         value=0,
